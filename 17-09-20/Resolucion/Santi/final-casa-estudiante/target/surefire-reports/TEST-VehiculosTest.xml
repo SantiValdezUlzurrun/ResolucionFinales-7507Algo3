@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="VehiculosTest" time="0.134" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.jnu.encoding" value="ANSI_X3.4-1968"/>
+    <property name="java.class.path" value="/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/test-classes:/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/classes:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter/5.4.0/junit-jupiter-5.4.0.jar:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/santi/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/santi/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/santi/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.4.0/junit-jupiter-params-5.4.0.jar:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/home/santi/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-14.0.1-openjdk/lib"/>
+    <property name="sun.java.command" value="/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/surefire/surefirebooter5510690580417095564.jar /home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/surefire 2020-09-22T14-59-55_345-jvmRun1 surefire12073310565737529478tmp surefire_01672391822384720024tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/test-classes:/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/classes:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter/5.4.0/junit-jupiter-5.4.0.jar:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/santi/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/santi/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/santi/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.4.0/junit-jupiter-params-5.4.0.jar:/home/santi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/home/santi/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/santi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.home" value="/usr/lib/jvm/java-14.0.1-openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante/target/surefire/surefirebooter5510690580417095564.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="user.name" value="santi"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.44-1-MANJARO"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="ANSI_X3.4-1968"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/santi/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="user.dir" value="/home/santi/Documentos/Materias/Algoritmos y Programacion III/finales/17-09-20/Resolucion/Santi/final-casa-estudiante"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="test" classname="VehiculosTest" time="0.102"/>
+</testsuite>

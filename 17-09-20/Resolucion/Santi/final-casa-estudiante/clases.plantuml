@@ -1,0 +1,68 @@
+@startuml
+
+skinparam monochrome true
+hide circle
+skinparam classAttributeIconSize 0
+
+abstract class Vehiculo{
+    -equipos : Equipos
+    +Vehiculo() : Vehiculo
+	+cargar(unaCarga : Carga) : void
+	+descargar() : Carga
+}
+
+class Equipos{
+    -equipos : List<Equipo>
+    +equipar(unEquipo : Equipo) : void
+    +cargar(unaCarga : Carga) : void
+    +descargar() : Carga
+}
+
+interface Equipo{
+    +puedeCargar(unaCarga : Carga) : bool
+    +cargar(unaCarga : Carga) : void
+    +descargar() : Carga
+}
+
+class EquipoComun{
+    -noEquipables : List<String>
+    -almacenado : List<Carga>
+}
+
+class PortaBici{
+    -equipables : List<String>
+    -almacenado : List<Carga>
+}
+
+class Auto{
+	+equiparPortaBici(unPortaBici : PortaBici) : void
+}
+
+class Moto{
+
+}
+
+interface Carga{
+    +estaEnLista(lista : List<Strings>) : bool
+}
+
+class Helatodo{
+}
+
+class Bici{
+}
+
+Carga <<Interface>>
+Vehiculo <<Abstract>>
+Equipo <<Interface>>
+Equipo <|.. EquipoComun
+Equipo <|.. PortaBici
+Vehiculo <|-- Auto
+Vehiculo <|-- Moto
+Carga <|.. Helatodo
+Carga <|.. Bici
+
+Equipos *-> Equipo
+Equipo *-> Carga
+Vehiculo *-> Equipos
+@enduml
