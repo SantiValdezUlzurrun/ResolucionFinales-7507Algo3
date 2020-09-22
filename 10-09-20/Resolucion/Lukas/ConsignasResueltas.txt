@@ -1,0 +1,50 @@
+a)
+- No hay encapsulamiento alguno. El usuario debe pedirle a los objetos sus atributos para manejarlos desde afuera, sin hacer caso al Tell, don't ask. Pues no existen dichos métodos.
+- Los respectivos constructores no construyen, es decir, no dejan al objeto en cualidad de uso, primero se deben setear manual y externamente los atributos de ellos.
+- No existe excepción alguna, siendo que hay postcondiciones que no se deben cumplir y sin embargo en ningún momento son checkeadas, sea por ejemplo, cantidad de metros negativos.
+- No utiliza polimorfismo en ningún lado. La toma de decisiones sobre algoritmos se hace sobre ramificaciones de los if.
+
+
+b) 
+	S: Single responsibility 		
+	O: Open close					
+	L: Liskov principle				
+	I: Interface segregation		
+	D: Dependency inversion			
+
+
+S:
+	No se cumple el principio de única responsabilidad en el componente eléctrico pues:
+		- Sabe cómo crearse a partir de un string que debe decodificar.
+		- Sabe tomar la desición de qué algoritmo ejecutar en caso de un tipo u otro.
+
+O:	De todos el peor llevado a cabo. Para cualquier cambio que se necesite es necesario tocar la clase componente eléctrico, tanto el constructor como el método getConsumo, como también tocar la clase casa para agregar una nueva colección de componente eléctrico concreto.
+
+D: 	Se viola este principio. El uso del usuario depende de detalles de la implementación volátiles en componente eléctrico. Como por ejemplo que estufaDeBanio tiene el atributo ambientes.
+
+
+
+
+
+
+
+
+
+
+
+Mi diseño:
+
+
+- Utiliza polimorfismo para tratar los diferentes componentes eléctricos e incluso consumidores de una casa, creando la interfaz consumidor.
+
+- Respeta el principio de Open-Close la casa, el modelo puede ser extensible a la cantidad necesaria de consumibles en una casa, con tan solo que implementen la interfaz "Consumista"
+
+- Respeta el principio de Open-Close la salamandra, ahora el modelo puede ser extendido a cualquier tipo de combustible que implemente la interfaz "Combustible"
+
+- Respeta el principio de sustitución de Liskov, pues todo consumista concreto puede ser reemplazado por la interfaz consumible sin ningún problema.
+
+- Respeta el principio de segregación de la interfaz, haciendo que la casa sólo sepa de la clase Salamandra, que existe el método "consumo", y no los demás que le son innecesarios.
+
+- Respeta el principio de inversión de la dependencia, pues ahora ni la casa ni el usuario dependen de clases volátiles, trabajando contra interfaces.
+
+- No se respeta completamente el principio de single responsibility, teniendo en la clase Salamandra dos razones de cambio, siendo una respecto de la faceta que agregar combustibles con su lógica interna e incluso una excepción y otra de la faceta de calcular el consumo, con también otra excepción.
